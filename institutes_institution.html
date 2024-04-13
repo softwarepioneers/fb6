@@ -96,18 +96,20 @@
                         <h3>ACADEMIC INSTITUTES</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                        <form action="" method="post" id="contact-us" class="form">
+                         <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
-                              
+                               
                                 <input type="text" name="InstituteName" id="InstituteName" autocomplete="off" placeholder="Institute Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
                             </div>
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteType" id="InstituteType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Type </option>
-                                    <option value="PRIVATE AIS">PRIVATE AIS </option>
-                                    <option value="PUBLIC AIS">PUBLIC AIS</option>
-                                </select>
-                            </div>
+
+                            
+                          <div class="form-group col-sm-4">
+                             <select name="TYPE" id="InstituteType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >Institute Type </option>
+                                <option value="PRIVATE INSTITUTE">PRIVATE INSTITUTE</option>
+                                <option value="PUBLIC INSTITUTE">PUBLIC INSTITUTE</option>
+                            </select>
+                        </div>
 
                             <div class="form-group col-sm-4">
                                 
@@ -157,46 +159,11 @@
                                 <input type="email" name="InstituteEmail" id="InstituteEmail" autocomplete="off" placeholder="Institute Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteSystem" id="InstituteSystem" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute System</option>
-                                    <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
-                                    <option value="SERVICE SYSTEM">SERVICE SYSTEM</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
-                                    autocomplete="off"
-                                    placeholder="Starting Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                               
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
-                                    autocomplete="off"
-                                    placeholder="Ending Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                               
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteRegion" id="Region" required class="form-control custom-form-control input-lg">
+                             <div class="form-group col-sm-4">
+                                <select name="InstituteRegion" id="Regions" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Institute Region</option>
                                 </select>
                             </div>
@@ -213,7 +180,38 @@
                                 </select>
                             </div>
 
-      
+                            
+                            <div class="form-group col-sm-4">
+                                <select name="InstituteStage" id="InstituteStage" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Institute Stage</option>
+                                    <option value="GENERAL INSTITUTE">GENERAL INSTITUTE</option>
+                                    <option value="TECHNICAL INSTITUTE">TECHNICAL INSTITUTE</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="InstituteSyllabus" id="InstituteSyllabus" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Institute Syllabus</option>
+                                     <option value="SOMALILAND">SOMALILAND</option>
+                                     <option value="OTHER">OTHER</option>
+                                </select>
+                            </div>
+
+
+
+
+
+
+                          <div class="form-group col-sm-4">
+                    <input type="text" name="SPECIALTY" id="InstituteSpecialty" autocomplete="off" placeholder="Institute Specialty" required class="form-control custom-form-control input-lg uc-text" >
+                    </div>
+
+
+                            
+                          
+
+                           
+                           
 
                             <div class="form-group col-sm-4">
                                 <select name="InstituteNeeds" id="InstituteNeeds" required class="form-control custom-form-control input-lg">
@@ -224,8 +222,8 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="InstituteOffer" id="InstituteOffer" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Offer</option>
+                                <select name="InstituteSystem" id="InstituteSystem" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Institute System</option>
                                     <optgroup label="PRODUCT">
                                         <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
                                         <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
@@ -237,7 +235,7 @@
                                 </select>
                             </div>
 
-                           
+                            
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
