@@ -102,16 +102,18 @@
                                
                                 <input type="text" name="UniversityName" id="UniversityName" autocomplete="off" placeholder="University Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
                             </div>
-                            <div class="form-group col-sm-4">
-                                <select name="UniversityType" id="UniversityType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>University Type </option>
-                                    <option value="PRIVATE AUS">PRIVATE AUS </option>
-                                    <option value="PUBLIC AUS">PUBLIC AUS</option>
-                                </select>
-                            </div>
+
+                            
+                          <div class="form-group col-sm-4">
+                             <select name="TYPE" id="UniversityType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >University Type </option>
+                                <option value="PRIVATE UNIVERSITY">PRIVATE UNIVERSITY</option>
+                                <option value="PUBLIC UNIVERSITY">PUBLIC UNIVERSITY</option>
+                            </select>
+                        </div>
 
                             <div class="form-group col-sm-4">
-                               
+                                
                                 <input type="text" name="UniversityManager" id="UniversityManager" autocomplete="off" placeholder="University Manager" required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                             <div class="form-group col-sm-4">
@@ -158,86 +160,108 @@
                                 <input type="email" name="UniversityEmail" id="UniversityEmail" autocomplete="off" placeholder="University Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="UniversitySystem" id="UniversitySystem" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>University System</option>
-                                    <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
-                                    <option value="SERVICE SYSTEM">SERVICE SYSTEM</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
-                                    autocomplete="off"
-                                    placeholder="Starting Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                                
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
-                                    autocomplete="off"
-                                    placeholder="Ending Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                                
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="Region" id="Region" required class="form-control custom-form-control input-lg">
+                           <div class="form-group col-sm-4">
+                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>University Region</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="topic" required class="form-control custom-form-control input-lg">
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>University City</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="District" id="chapter" required class="form-control custom-form-control input-lg">
+                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>University District</option>
                                 </select>
                             </div>
 
-                           
-
+                            
                             <div class="form-group col-sm-4">
-                                <select name="UniversityDuration" id="UniversityDuration" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>University Duration</option>
-                                    <option value="YEARLY SYSTEM">YEARLY SYSTEM</option>
-                                    <option value="MONTHLY SYSTEM">MONTHLY SYSTEM </option>
+                                <select name="UniversityStage" id="UniversityStage" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University Stage</option>
+                                    <option value="KGS">KGS</option>
+                                    <option value="PRIS">PRIS</option>
+                                    <option value="PRES">PRES</option>
+                                    <option value="SECS">SECS</option>
+                                    <option value="KGPRIS">KGPRIS</option>
+                                    <option value="PRIPRES">PRIPRES</option>
+                                    <option value="PRESECS">PRESECS</option>
+                                    <option value="KGPRIPRES">KGPRIPRES</option>
+                                    <option value="PRIPRESECS">PRIPRESECS</option>
+                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="UniversityStatus" id="UniversityStatus" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>University Status</option>
+                                <input
+                                    type="text"
+                                    name="StartingContract"
+                                    id="StartingContract"
+                                    autocomplete="off"
+                                    placeholder="Starting Contract"
+                                    onfocus="(this.type='date')"
+                                    onblur="(this.type='text')"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                />
+                                
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input
+                                    type="text"
+                                    name="EndingContract"
+                                    id="EndingContract"
+                                    autocomplete="off"
+                                    placeholder="Ending Contract"
+                                    onfocus="(this.type='date')"
+                                    onblur="(this.type='text')"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                />
+                                
+                            </div>
+
+
+
+
+
+
+                    <div class="form-group col-sm-4">
+                    <input type="text" name="UserName" id="UserName" autocomplete="off" placeholder="User Name" required class="form-control custom-form-control input-lg uc-text" >
+                    </div>
+
+
+                             
+                   <div class="form-group col-sm-4">
+                       <select name="UserActive" id="UserActive" required class="form-control custom-form-control input-lg ">
+                                    <option value="" selected disabled >User Active</option>
                                     <option value="ACTIVATED SYSTEMS">ACTIVATED SYSTEMS</option>
                                     <option value="WARNING SYSTEMS">WARNING SYSTEMS </option>
                                     <option value="SUSPENDED SYSTEMS">SUSPENDED SYSTEMS </option>
-                                </select>
-                            </div>
+                      </select>
+                   </div>
+
+                            
+                          
+
+                           
+                           
+
+                           
 
                             
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="ACTIVATE" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
+
                     </div>
 
                     <p></p>
