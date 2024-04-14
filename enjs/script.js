@@ -131,8 +131,8 @@ var subjectObject = {
 }
 window.onload = function() {
   var subjectSel = document.getElementById("Regions");
-  var topicSel = document.getElementById("topic");
-  var chapterSel = document.getElementById("chapter");
+  var topicSel = document.getElementById("City");
+  var chapterSel = document.getElementById("District");
   for (var x in subjectObject) {
     subjectSel.options[subjectSel.options.length] = new Option(x, x);
   }
