@@ -69,42 +69,6 @@ return false;
 
 
 
-// let data = [{
-//   item: 'Fruits',
-//   subitems: ['apple', 'banana', 'pineapple', 'watermelon']
-// },
-// {
-//   item: 'Meals',
-//   subitems: ['chicken', 'bacon', 'pork', 'beef']
-// },
-// {
-//   item: 'Animals',
-//   subitems: ['cat', 'rabbit', 'mouse', 'lion']
-// },
-// {
-//   item: 'Brands Laptops',
-//   subitems: ['Dell', 'HP', 'Apple', 'Sony'],
-// },
-// ];
-
-
-// window.onload = function() {
-// var itemSel = document.getElementById("first");
-// var subitemSel = document.getElementById("second");
-
-// for (var x in data) {
-//   itemSel.options[itemSel.options.length] = new Option(data[x].item, x);
-// }
-// itemSel.onchange = function() {
-//   //empty 
-//   subitemSel.length = 1;
-//   //display correct values
-//   for (var y of data[this.value].subitems) {
-//     subitemSel.options[subitemSel.options.length] = new Option(y, y);
-//   }
-// }
-// }
-
 
 function regions() {
   
