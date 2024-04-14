@@ -102,13 +102,15 @@
                                
                                 <input type="text" name="InstituteName" id="InstituteName" autocomplete="off" placeholder="Institute Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
                             </div>
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteType" id="InstituteType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Type </option>
-                                    <option value="PRIVATE AIS">PRIVATE AIS </option>
-                                    <option value="PUBLIC AIS">PUBLIC AIS</option>
-                                </select>
-                            </div>
+
+                            
+                          <div class="form-group col-sm-4">
+                             <select name="InstituteType" id="InstituteType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >Institute Type </option>
+                                <option value="PRIVATE INSTITUTE">PRIVATE INSTITUTE</option>
+                                <option value="PUBLIC INSTITUTE">PUBLIC INSTITUTE</option>
+                            </select>
+                        </div>
 
                             <div class="form-group col-sm-4">
                                 
@@ -158,87 +160,73 @@
                                 <input type="email" name="InstituteEmail" id="InstituteEmail" autocomplete="off" placeholder="Institute Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteSystem" id="InstituteSystem" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute System</option>
-                                    <option value="PRODUCT SYSTEM">PRODUCT SYSTEM</option>
-                                    <option value="SERVICE SYSTEM">SERVICE SYSTEM</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
-                                    autocomplete="off"
-                                    placeholder="Starting Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                                
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
-                                    autocomplete="off"
-                                    placeholder="Ending Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                               
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="InstituteRegion" id="Region" required class="form-control custom-form-control input-lg">
+                             <div class="form-group col-sm-4">
+                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Institute Region</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="InstituteCity" id="topic" required class="form-control custom-form-control input-lg">
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Institute City</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="InstituteDistrict" id="chapter" required class="form-control custom-form-control input-lg">
+                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Institute District</option>
                                 </select>
                             </div>
 
                             
-
                             <div class="form-group col-sm-4">
-                                <select name="InstituteNeeds" id="InstituteNeeds" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Needs</option>
-                                    <option value="PRODUCT INSTITUTE">PRODUCT INSTITUTE</option>
-                                    <option value="SERVICE INSTITUTE">SERVICE INSTITUTE</option>
+                                <select name="InstituteStage" id="InstituteStage" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Institute Stage</option>
+                                    <option value="GENERAL INSTITUTE">GENERAL INSTITUTE</option>
+                                    <option value="TECHNICAL INSTITUTE">TECHNICAL INSTITUTE</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="InstituteOffer" id="InstituteOffer" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Institute Offer</option>
-                                    <optgroup label="PRODUCT">
-                                        <option value="ONLINE PRODUCT"> ONLINE PRODUCT</option>
-                                        <option value="OFFLINE PRODUCT">OFFLINE PRODUCT</option>
-                                    </optgroup>
-                                    <optgroup label="SERVICE">
-                                        <option value="ONLINE SERVICE">ONLINE SERVICE</option>
-                                        <option value="OFFLINE SERVICE">OFFLINE SERVICE</option>
-                                    </optgroup>
+                                <select name="SystemType" id="SystemType" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>System Type</option>
+                                     <option value="OFFLINE SYSTEM">OFFLINE SYSTEM</option>
+                                     <option value="ONLINE SYSTEM">ONLINE SYSTEM</option>
                                 </select>
                             </div>
+
+                             <div class="form-group col-sm-4">
+                                <select name="SystemDuration" id="SystemDuration" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>System Duration</option>
+                                     <option value="MONTHLY SYSTEM">MONTHLY SYSTEM</option>
+                                     <option value="YEARLY SYSTEM">YEARLY SYSTEM</option>
+                                </select>
+                            </div>
+
+
+
+
+
+
+                    <div class="form-group col-sm-4">
+                    <input type="text" name="UserName" id="UserName" autocomplete="off" placeholder="User Name" required class="form-control custom-form-control input-lg uc-text" >
+                    </div>
+                    <div class="form-group col-sm-4">
+                    <input type="text" name="UserPassword" id="UserPassword" autocomplete="off" placeholder="User Password" required class="form-control custom-form-control input-lg uc-text" >
+                    </div>
+
+                            
+                          
 
                            
+                           
+
+                           
+
+                            
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
