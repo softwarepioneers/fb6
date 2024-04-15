@@ -131,7 +131,7 @@ var subjectObject = {
             window.onload = function () {
                 var subjectSel = document.getElementById("maroodijeex");
                 var topicSel = document.getElementById("City");
-                var chapterSel = document.getElementById("District");
+                var chapterSel = document.getElementById("Districts");
                 for (var x in subjectObject) {
                     subjectSel.options[subjectSel.options.length] = new Option(x, x);
                 }
