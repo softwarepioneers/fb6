@@ -123,12 +123,11 @@ window.onload = function() {
 
 
 function maroodijeex() {
-    <script>
-            var subjectObject = {
+var subjectObject = {
                "MAROODIJEEX REGION": {
                           "HARGAYSA CITY": ["26 JUNE DISTRICT", "31 MAY DISTRICT", "AXMED DHAGAX DISTRICT", "MACALIN HAARUUN DISTRICT", "GACAN LIBAAX DISTRICT", "IBRAHIM KOODBUUR DISTRICT", "MAXAMED HAYBE DISTRICT","MAXAMED MOOGE DISTRICT"] //8
-            },
-            };
+            }
+            }
             window.onload = function () {
                 var subjectSel = document.getElementById("maroodijeex");
                 var topicSel = document.getElementById("city");
@@ -153,18 +152,17 @@ function maroodijeex() {
                     for (var i = 0; i < z.length; i++) {
                         chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
                     }
-                };
-            };
-        </script>
+                }
+            }
+       
 }
 
 function awdal() {
-    <script>
-            var subjectObject = {
+var subjectObject = {
             "AWDAL REGION": {
                          "BORAMA CITY": ["SH.AXMED SALAAN DISTRICT", "SH.CUSMAN DISTRICT", "SH.CALI JAWHAR DISTRICT", "SH.MAKAAHIIL DISTRICT"] //4
-            },
-            };
+            }
+            }
             window.onload = function () {
                 var subjectSel = document.getElementById("awdal");
                 var topicSel = document.getElementById("city");
@@ -189,9 +187,9 @@ function awdal() {
                     for (var i = 0; i < z.length; i++) {
                         chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
                     }
-                };
-            };
-        </script>
+                }
+            }
+       
 }
 
 
