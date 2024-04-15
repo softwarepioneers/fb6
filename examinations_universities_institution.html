@@ -97,21 +97,23 @@
                         <h3>EXAMINATIONS UNIVERSITIES</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                        <form action="https://formspree.io/f/xjvdnowr" method="post" id="contact-us" class="form">
-                            <div class="form-group col-sm-4">
-                              
-                                <input type="text" name="UniversityName" id="UniversityName" autocomplete="off" placeholder="University Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <select name="UniversityType" id="UniversityType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected="" disabled="">University Type </option>
-                                    <option value="PRIVATE KGS">PRIVATE KGS </option>
-                                    <option value="PUBLIC KGS">PUBLIC KGS</option>
-                                </select>
-                            </div>
-
+                         <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
                                
+                                <input type="text" name="UniversityName" id="UniversityName" autocomplete="off" placeholder="University Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
+                            </div>
+
+                            
+                          <div class="form-group col-sm-4">
+                             <select name="UniversityType" id="UniversityType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >University Type </option>
+                                <option value="PRIVATE UNIVERSITY">PRIVATE UNIVERSITY</option>
+                                <option value="PUBLIC UNIVERSITY">PUBLIC UNIVERSITY</option>
+                            </select>
+                        </div>
+
+                            <div class="form-group col-sm-4">
+                                
                                 <input type="text" name="UniversityManager" id="UniversityManager" autocomplete="off" placeholder="University Manager" required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                             <div class="form-group col-sm-4">
@@ -158,64 +160,80 @@
                                 <input type="email" name="UniversityEmail" id="UniversityEmail" autocomplete="off" placeholder="University Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="UniversitySystem" id="UniversitySystem" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected="" disabled="">University Service</option>
-                                    <option value="SERVICES EXAMINATIONS">SERVICES EXAMINATIONS</option>
+
+
+
+                             <div class="form-group col-sm-4">
+                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University Region</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University City</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University District</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="form-group col-sm-4">
+                                <select name="UniversitySpecialty" id="UniversitySpecialty" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University Specialty</option>
+                                    <option value="KGS">KGS</option>
+                                    <option value="PRIS">PRIS</option>
+                                    <option value="PRES">PRES</option>
+                                    <option value="SECS">SECS</option>
+                                    <option value="KGPRIS">KGPRIS</option>
+                                    <option value="PRIPRES">PRIPRES</option>
+                                    <option value="PRESECS">PRESECS</option>
+                                    <option value="KGPRIPRES">KGPRIPRES</option>
+                                    <option value="PRIPRESECS">PRIPRESECS</option>
+                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="UniversitySyllabus" id="UniversitySyllabus" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>University Syllabus</option>
+                                     <option value="SOMALILAND SYLLABUS">SOMALILAND SYLLABUS</option>
+                                     <option value="OTHER SYLLABUS">OTHER SYLLABUS</option>
+                                </select>
+                            </div>
+
+
+
+
+
+
+                            <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
+                                    name="RegistrationDate"
+                                    id="RegistrationDate"
                                     autocomplete="off"
-                                    placeholder="Starting Date"
+                                    placeholder="Registration Date"
                                     onfocus="(this.type='date')"
                                     onblur="(this.type='text')"
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
                                 />
-                               
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
-                                    autocomplete="off"
-                                    placeholder="Ending Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                               
 
-                            <div class="form-group col-sm-4">
-                                <select name="REGION" id="Region" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected="" disabled="">University Region</option>
-                                </select>
-                            </div>
+                            
+                          
 
-                            <div class="form-group col-sm-4">
-                                <select name="CITY" id="topic" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected="" disabled="">University City</option>
-                                </select>
-                            </div>
+                           
+                           
 
-                            <div class="form-group col-sm-4">
-                                <select name="DISTRICT" id="chapter" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected="" disabled="">University District</option>
-                                </select>
-                            </div>
-
-    
-
-                            <div class="form-group col-sm-4">
-                                <select name="SPECIALTY" id="Specialty" required class="form-control custom-form-control input-lg">
+                          <div class="form-group col-sm-4">
+                                <select name="ExaminationsType" id="ExaminationsType" required class="form-control custom-form-control input-lg">
                                     <option value="" selected="" disabled=""> Examinations Type</option>
                                     <option value="YEARLY EXAMINATIONS">YEARLY EXAMINATIONS</option>
                                     <option value="MONTHLY EXAMINATIONS">MONTHLY EXAMINATIONS</option>
@@ -223,14 +241,15 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="PRODUCT" id="Product" required class="form-control custom-form-control input-lg">
+                                <select name="UniversityExaminations" id="UniversityExaminations" required class="form-control custom-form-control input-lg">
                                     <option value="" selected="" disabled="">University Examinations</option>
                                     <option value="ONLINE EXAMINATIONS"> ONLINE EXAMINATIONS</option>
                                     <option value="OFFLINE EXAMINATIONS">OFFLINE EXAMINATIONS</option>
                                 </select>
                             </div>
 
-                           
+
+                            
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
