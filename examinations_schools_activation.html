@@ -94,19 +94,23 @@
                         <h3>EXAMINATIONS SCHOOLS</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                        <form action="" method="post" id="contact-us" class="form">
+                         <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
+                               
                                 <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
                             </div>
-                            <div class="form-group col-sm-4">
-                                <select name="SchoolType" id="SchoolType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Type </option>
-                                    <option value="PRIVATE KGS">PRIVATE KGS </option>
-                                    <option value="PUBLIC KGS">PUBLIC KGS</option>
-                                </select>
-                            </div>
+
+                            
+                          <div class="form-group col-sm-4">
+                             <select name="TYPE" id="SchoolType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >School Type </option>
+                                <option value="PRIVATE SCHOOL">PRIVATE SCHOOL</option>
+                                <option value="PUBLIC SCHOOL">PUBLIC SCHOOL</option>
+                            </select>
+                        </div>
 
                             <div class="form-group col-sm-4">
+                                
                                 <input type="text" name="SchoolManager" id="SchoolManager" autocomplete="off" placeholder="School Manager" required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                             <div class="form-group col-sm-4">
@@ -153,20 +157,51 @@
                                 <input type="email" name="SchoolEmail" id="SchoolEmail" autocomplete="off" placeholder="School Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
+
+
+
+                           <div class="form-group col-sm-4">
+                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>School Region</option>
+                                </select>
+                            </div>
+
                             <div class="form-group col-sm-4">
-                                <select name="SchoolSystem" id="SchoolSystem" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School System</option>
-                                    <option value="EXAMINATIONS SYSTEMS">EXAMINATIONS SYSTEMS</option>
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>School City</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>School District</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="form-group col-sm-4">
+                                <select name="SchoolSpecialty" id="SchoolSpecialty" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>School Specialty</option>
+                                    <option value="KGS">KGS</option>
+                                    <option value="PRIS">PRIS</option>
+                                    <option value="PRES">PRES</option>
+                                    <option value="SECS">SECS</option>
+                                    <option value="KGPRIS">KGPRIS</option>
+                                    <option value="PRIPRES">PRIPRES</option>
+                                    <option value="PRESECS">PRESECS</option>
+                                    <option value="KGPRIPRES">KGPRIPRES</option>
+                                    <option value="PRIPRESECS">PRIPRESECS</option>
+                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
+                                    name="StartingContract"
+                                    id="StartingContract"
                                     autocomplete="off"
-                                    placeholder="Starting Date"
+                                    placeholder="Starting Contract"
                                     onfocus="(this.type='date')"
                                     onblur="(this.type='text')"
                                     required
@@ -178,56 +213,48 @@
                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
+                                    name="EndingContract"
+                                    id="EndingContract"
                                     autocomplete="off"
-                                    placeholder="Ending Date"
+                                    placeholder="Ending Contract"
                                     onfocus="(this.type='date')"
                                     onblur="(this.type='text')"
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
                                 />
-                               
+                                
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="Region" id="Region" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Region</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="City" id="topic" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School City</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="District" id="chapter" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School District</option>
-                                </select>
-                            </div>
 
-    
 
-                            <div class="form-group col-sm-4">
-                                <select name="SchoolDuration" id="SchoolDuration" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Duration</option>
-                                    <option value="YEARLY EXAMINATIONS">YEARLY EXAMINATION </option>
-                                    <option value="MONTHLY EXAMINATIONS">MONTHLY EXAMINATION</option>
-                                </select>
-                            </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="SchoolStatus" id="SchoolStatus" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>School Status</option>
-                                    <option value="ACTIVATED EXAMINATIONS">ACTIVATED EXAMINATIONS </option>
-                                    <option value="WARNING EXAMINATIONS">WARNING EXAMINATIONS </option>
-                                    <option value="SUSPENDED EXAMINATIONS">SUSPENDED EXAMINATIONS</option>
-                                </select>
-                            </div>
+                    <div class="form-group col-sm-4">
+                    <input type="text" name="UserName" id="UserName" autocomplete="off" placeholder="User Name" required class="form-control custom-form-control input-lg uc-text" >
+                    </div>
 
-                                                       <div class="form-group col-md-12 text-center">
+
+                             
+                   <div class="form-group col-sm-4">
+                       <select name="UserActive" id="UserActive" required class="form-control custom-form-control input-lg ">
+                                    <option value="" selected disabled >User Active</option>
+                                    <option value="ACTIVATED SYSTEMS">ACTIVATED SYSTEMS</option>
+                                    <option value="WARNING SYSTEMS">WARNING SYSTEMS </option>
+                                    <option value="SUSPENDED SYSTEMS">SUSPENDED SYSTEMS </option>
+                      </select>
+                   </div>
+
+                            
+                          
+
+                           
+                           
+
+                           
+
+                            
+                            <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="ACTIVATE" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
