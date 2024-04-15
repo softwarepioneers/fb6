@@ -122,3 +122,42 @@ window.onload = function() {
 }
 
 
+function maroodijeex() {
+    <script>
+            var subjectObject = {
+                MAROODIJEEX: {
+                    HARGAYSA: ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE", "MAXAMED MOOGE"], //8
+                },
+            };
+            window.onload = function () {
+                var subjectSel = document.getElementById("region");
+                var topicSel = document.getElementById("city");
+                var chapterSel = document.getElementById("district");
+                for (var x in subjectObject) {
+                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                }
+                subjectSel.onchange = function () {
+                    //empty Chapters- and Topics- dropdowns
+                    chapterSel.length = 1;
+                    topicSel.length = 1;
+                    //display correct values
+                    for (var y in subjectObject[this.value]) {
+                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                    }
+                };
+                topicSel.onchange = function () {
+                    //empty Chapters dropdown
+                    chapterSel.length = 1;
+                    //display correct values
+                    var z = subjectObject[subjectSel.value][this.value];
+                    for (var i = 0; i < z.length; i++) {
+                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                    }
+                };
+            };
+        </script>
+}
+
+
+
+
