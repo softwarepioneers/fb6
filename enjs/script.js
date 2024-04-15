@@ -125,9 +125,9 @@ window.onload = function() {
 function maroodijeex() {
     <script>
             var subjectObject = {
-                MAROODIJEEX: {
-                    HARGAYSA: ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE", "MAXAMED MOOGE"], //8
-                },
+               "MAROODIJEEX REGION": {
+                          "HARGAYSA CITY": ["26 JUNE DISTRICT", "31 MAY DISTRICT", "AXMED DHAGAX DISTRICT", "MACALIN HAARUUN DISTRICT", "GACAN LIBAAX DISTRICT", "IBRAHIM KOODBUUR DISTRICT", "MAXAMED HAYBE DISTRICT","MAXAMED MOOGE DISTRICT"] //8
+            },
             };
             window.onload = function () {
                 var subjectSel = document.getElementById("region");
