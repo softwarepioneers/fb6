@@ -96,11 +96,11 @@
                     <div class="col-xs-12 col-md-12">
                                              <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
-                                <input type="text" name="EducationalEnterpriseName" id="EducationalEnterpriseName" autocomplete="off" placeholder="Educational Enterprise Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
+                                <input type="text" name="EnterpriseName" id="EnterpriseName" autocomplete="off" placeholder="Enterprise Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                           <div class="form-group col-sm-4">
-                             <select name="EducationalEnterpriseType" id="EducationalEnterpriseType" required class="form-control custom-form-control input-lg ">
-                                <option value="" selected="" disabled="" >Educational Enterprise Type </option>
+                             <select name="EnterpriseType" id="EnterpriseType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >Enterprise Type </option>
                                 <option value="SCHOOL">SCHOOL</option>
                                 <option value="INSTITUTE">INSTITUTE</option>
                                 <option value="UNIVERSITY">UNIVERSITY</option>
@@ -109,15 +109,15 @@
 
                             <div class="form-group col-sm-4">
                                 
-                                <input type="text" name="EducationalEnterpriseManager" id="EducationalEnterpriseManager" autocomplete="off" placeholder="Educational Enterprise Manager" required class="form-control custom-form-control input-lg uc-text" />
+                                <input type="text" name="EnterpriseManager" id="EnterpriseManager" autocomplete="off" placeholder="Enterprise Manager" required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="EducationalEnterpriseMobile"
-                                    id="EducationalEnterpriseMobile"
+                                    name="EnterpriseMobile"
+                                    id="EnterpriseMobile"
                                     autocomplete="off"
-                                    placeholder="Educational Enterprise Mobile"
+                                    placeholder="Enterprise Mobile"
                                     maxlength="15"
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
@@ -128,10 +128,10 @@
                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="EducationalEnterprisePhone"
-                                    id="EducationalEnterprisePhone"
+                                    name="EnterprisePhone"
+                                    id="EnterprisePhone"
                                     autocomplete="off"
-                                    placeholder="Educational Enterprise Phone"
+                                    placeholder="Enterprise Phone"
                                     maxlength="15"
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
@@ -141,10 +141,10 @@
                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
-                                    name="EducationalEnterpriseWhatsApp"
-                                    id="EducationalEnterpriseWhatsApp"
+                                    name="EnterpriseWhatsApp"
+                                    id="EnterpriseWhatsApp"
                                     autocomplete="off"
-                                    placeholder="Educational Enterprise WhatsApp"
+                                    placeholder="Enterprise WhatsApp"
                                     maxlength="15"
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
@@ -152,7 +152,7 @@
                                 />
                             </div>
                             <div class="form-group col-sm-4">
-                                <input type="email" name="EducationalEnterpriseEmail" id="EducationalEnterpriseEmail" autocomplete="off" placeholder="Educational Enterprise Email " required class="form-control custom-form-control input-lg uc-text" />
+                                <input type="email" name="EnterpriseEmail" id="EnterpriseEmail" autocomplete="off" placeholder="Enterprise Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
 
@@ -160,26 +160,26 @@
 
                              <div class="form-group col-sm-4">
                                 <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Educational Enterprise Region</option>
+                                    <option value="" selected disabled>Enterprise Region</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
                                 <select name="City" id="City" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Educational Enterprise City</option>
+                                    <option value="" selected disabled>Enterprise City</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
                                 <select name="District" id="District" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Educational Enterprise District</option>
+                                    <option value="" selected disabled>Enterprise District</option>
                                 </select>
                             </div>
 
                             
                             <div class="form-group col-sm-4">
                                 <select name="EducationalEnterpriseSpecialty" id="EducationalEnterpriseSpecialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Educational Enterprise Specialty</option>
+                                    <option value="" selected disabled>Enterprise Specialty</option>
                                     <option value="KGS">KGS</option>
                                     <option value="PRIS">PRIS</option>
                                     <option value="PRES">PRES</option>
@@ -196,8 +196,8 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="EducationalEnterpriseSyllabus" id="EducationalEnterpriseSyllabus" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Educational Enterprise Syllabus</option>
+                                <select name="EnterpriseSyllabus" id="EnterpriseSyllabus" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Enterprise Syllabus</option>
                                      <option value="SOMALILAND SYLLABUS">SOMALILAND SYLLABUS</option>
                                      <option value="OTHER SYLLABUS">OTHER SYLLABUS</option>
                                 </select>
@@ -293,38 +293,10 @@
         <script src="enjs/jquery-2.2.4.js"></script>
         <script src="enjs/bootstrap.js"></script>
         <script src="enjs/script.js"></script>
-        <script>
-            var subjectObject = {
-                MAROODIJEEX: {
-                    HARGAYSA: ["26 JUNE", "31 MAY", "AXMED DHAGAX", "MACALIN HAARUUN", "GACAN LIBAAX", "IBRAHIM KOODBUUR", "MAXAMED HAYBE", "MAXAMED MOOGE"], //8
-                },
-            };
-            window.onload = function () {
-                var subjectSel = document.getElementById("maroodijeex");
-                var topicSel = document.getElementById("topic");
-                var chapterSel = document.getElementById("chapter");
-                for (var x in subjectObject) {
-                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
-                }
-                subjectSel.onchange = function () {
-                    //empty Chapters- and Topics- dropdowns
-                    chapterSel.length = 1;
-                    topicSel.length = 1;
-                    //display correct values
-                    for (var y in subjectObject[this.value]) {
-                        topicSel.options[topicSel.options.length] = new Option(y, y);
-                    }
-                };
-                topicSel.onchange = function () {
-                    //empty Chapters dropdown
-                    chapterSel.length = 1;
-                    //display correct values
-                    var z = subjectObject[subjectSel.value][this.value];
-                    for (var i = 0; i < z.length; i++) {
-                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
-                    }
-                };
-            };
+        
+         <script>
+            regions();
         </script>
+        
     </body>
 </html>
