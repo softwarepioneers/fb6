@@ -130,7 +130,7 @@ function maroodijeex() {
             },
             };
             window.onload = function () {
-                var subjectSel = document.getElementById("region");
+                var subjectSel = document.getElementById("maroodijeex");
                 var topicSel = document.getElementById("city");
                 var chapterSel = document.getElementById("district");
                 for (var x in subjectObject) {
