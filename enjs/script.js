@@ -193,5 +193,159 @@ var subjectObject = {
 }
 
 
+function sool() {
+var subjectObject = {
+            "AWDAL REGION": {
+                         "BORAMA CITY": ["SH.AXMED SALAAN DISTRICT", "SH.CUSMAN DISTRICT", "SH.CALI JAWHAR DISTRICT", "SH.MAKAAHIIL DISTRICT"] //4
+            }
+            }
+            window.onload = function () {
+                var subjectSel = document.getElementById("sool");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
+                for (var x in subjectObject) {
+                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                }
+                subjectSel.onchange = function () {
+                    //empty Chapters- and Topics- dropdowns
+                    chapterSel.length = 1;
+                    topicSel.length = 1;
+                    //display correct values
+                    for (var y in subjectObject[this.value]) {
+                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                    }
+                };
+                topicSel.onchange = function () {
+                    //empty Chapters dropdown
+                    chapterSel.length = 1;
+                    //display correct values
+                    var z = subjectObject[subjectSel.value][this.value];
+                    for (var i = 0; i < z.length; i++) {
+                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                    }
+                }
+            }
+       
+}
+
+
+
+
+function sanaag() {
+var subjectObject = {
+            "AWDAL REGION": {
+                         "BORAMA CITY": ["SH.AXMED SALAAN DISTRICT", "SH.CUSMAN DISTRICT", "SH.CALI JAWHAR DISTRICT", "SH.MAKAAHIIL DISTRICT"] //4
+            }
+            }
+            window.onload = function () {
+                var subjectSel = document.getElementById("sanaag");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
+                for (var x in subjectObject) {
+                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                }
+                subjectSel.onchange = function () {
+                    //empty Chapters- and Topics- dropdowns
+                    chapterSel.length = 1;
+                    topicSel.length = 1;
+                    //display correct values
+                    for (var y in subjectObject[this.value]) {
+                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                    }
+                };
+                topicSel.onchange = function () {
+                    //empty Chapters dropdown
+                    chapterSel.length = 1;
+                    //display correct values
+                    var z = subjectObject[subjectSel.value][this.value];
+                    for (var i = 0; i < z.length; i++) {
+                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                    }
+                }
+            }
+       
+}
+
+
+
+
+function saaxil() {
+var subjectObject = {
+            "AWDAL REGION": {
+                         "BORAMA CITY": ["SH.AXMED SALAAN DISTRICT", "SH.CUSMAN DISTRICT", "SH.CALI JAWHAR DISTRICT", "SH.MAKAAHIIL DISTRICT"] //4
+            }
+            }
+            window.onload = function () {
+                var subjectSel = document.getElementById("saaxil");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
+                for (var x in subjectObject) {
+                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                }
+                subjectSel.onchange = function () {
+                    //empty Chapters- and Topics- dropdowns
+                    chapterSel.length = 1;
+                    topicSel.length = 1;
+                    //display correct values
+                    for (var y in subjectObject[this.value]) {
+                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                    }
+                };
+                topicSel.onchange = function () {
+                    //empty Chapters dropdown
+                    chapterSel.length = 1;
+                    //display correct values
+                    var z = subjectObject[subjectSel.value][this.value];
+                    for (var i = 0; i < z.length; i++) {
+                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                    }
+                }
+            }
+       
+}
+
+
+
+
+function togdheer() {
+var subjectObject = {
+            "AWDAL REGION": {
+                         "BORAMA CITY": ["SH.AXMED SALAAN DISTRICT", "SH.CUSMAN DISTRICT", "SH.CALI JAWHAR DISTRICT", "SH.MAKAAHIIL DISTRICT"] //4
+            }
+            }
+            window.onload = function () {
+                var subjectSel = document.getElementById("togdheer");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
+                for (var x in subjectObject) {
+                    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+                }
+                subjectSel.onchange = function () {
+                    //empty Chapters- and Topics- dropdowns
+                    chapterSel.length = 1;
+                    topicSel.length = 1;
+                    //display correct values
+                    for (var y in subjectObject[this.value]) {
+                        topicSel.options[topicSel.options.length] = new Option(y, y);
+                    }
+                };
+                topicSel.onchange = function () {
+                    //empty Chapters dropdown
+                    chapterSel.length = 1;
+                    //display correct values
+                    var z = subjectObject[subjectSel.value][this.value];
+                    for (var i = 0; i < z.length; i++) {
+                        chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+                    }
+                }
+            }
+       
+}
+
+
+
+
+
+
 
 
