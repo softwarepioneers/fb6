@@ -130,8 +130,8 @@ var subjectObject = {
             }
             window.onload = function () {
                 var subjectSel = document.getElementById("maroodijeex");
-                var topicSel = document.getElementById("city");
-                var chapterSel = document.getElementById("district");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
                 for (var x in subjectObject) {
                     subjectSel.options[subjectSel.options.length] = new Option(x, x);
                 }
@@ -165,8 +165,8 @@ var subjectObject = {
             }
             window.onload = function () {
                 var subjectSel = document.getElementById("awdal");
-                var topicSel = document.getElementById("city");
-                var chapterSel = document.getElementById("district");
+                var topicSel = document.getElementById("City");
+                var chapterSel = document.getElementById("District");
                 for (var x in subjectObject) {
                     subjectSel.options[subjectSel.options.length] = new Option(x, x);
                 }
