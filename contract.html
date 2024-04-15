@@ -94,83 +94,134 @@
                         <h3>EDUCATIONAL CONTRACTS</h3>
                     </div>
                     <div class="col-xs-12 col-md-12">
-                        <form action="" method="post" id="contact-us" class="form">
+                                             <form action="" method="post" id="contact-us" class="form">
                             <div class="form-group col-sm-4">
-                                <input type="text" name="TeacherName" id="TeacherName" autocomplete="off" placeholder="Teacher Name " required class="form-control custom-form-control input-lg uc-text" />
+                                <input type="text" name="EducationalEnterpriseName" id="EducationalEnterpriseName" autocomplete="off" placeholder="Educational Enterprise Name " autofocus required class="form-control custom-form-control input-lg uc-text" />
+                            </div>
+                          <div class="form-group col-sm-4">
+                             <select name="EducationalEnterpriseType" id="EducationalEnterpriseType" required class="form-control custom-form-control input-lg ">
+                                <option value="" selected="" disabled="" >Educational Enterprise Type </option>
+                                <option value="SCHOOL">SCHOOL</option>
+                                <option value="INSTITUTE">INSTITUTE</option>
+                                <option value="UNIVERSITY">UNIVERSITY</option>
+                            </select>
+                        </div>
+
+                            <div class="form-group col-sm-4">
+                                
+                                <input type="text" name="EducationalEnterpriseManager" id="EducationalEnterpriseManager" autocomplete="off" placeholder="Educational Enterprise Manager" required class="form-control custom-form-control input-lg uc-text" />
                             </div>
                             <div class="form-group col-sm-4">
-                                <select name="TeacherType" id="TeacherType" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Type </option>
-                                    <option value="TEACHER KGS">TEACHER KGS</option>
-                                    <option value="TEACHER PRIS">TEACHER PRIS</option>
-                                    <option value="TEACHER PRES">TEACHER PRES</option>
-                                    <option value="TEACHER SECS">TEACHER SECS</option>
-                                    <option value="TEACHER KGPRIS">TEACHER KGPRIS</option>
-                                    <option value="TEACHER PRIPRES">TEACHER PRIPRES</option>
-                                    <option value="TEACHER PRESECS">TEACHER PRESECS</option>
-                                    <option value="TEACHER KGPRIPRES">TEACHER KGPRIPRES</option>
-                                    <option value="TEACHER PRIPRESECS">TEACHER PRIPRESECS</option>
-                                    <option value="TEACHER KGPRIPRESECS">TEACHER KGPRIPRESECS</option>
-                                    <option value="TEACHER AIS">TEACHER AIS</option>
-                                    <option value="TEACHER AUS">TEACHER AUS</option>
-                                    <option value="TEACHER EMIS">TEACHER EMIS</option>
+                                <input
+                                    type="text"
+                                    name="EducationalEnterpriseMobile"
+                                    id="EducationalEnterpriseMobile"
+                                    autocomplete="off"
+                                    placeholder="Educational Enterprise Mobile"
+                                    maxlength="15"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                />
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <input
+                                    type="text"
+                                    name="EducationalEnterprisePhone"
+                                    id="EducationalEnterprisePhone"
+                                    autocomplete="off"
+                                    placeholder="Educational Enterprise Phone"
+                                    maxlength="15"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input
+                                    type="text"
+                                    name="EducationalEnterpriseWhatsApp"
+                                    id="EducationalEnterpriseWhatsApp"
+                                    autocomplete="off"
+                                    placeholder="Educational Enterprise WhatsApp"
+                                    maxlength="15"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                                />
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <input type="email" name="EducationalEnterpriseEmail" id="EducationalEnterpriseEmail" autocomplete="off" placeholder="Educational Enterprise Email " required class="form-control custom-form-control input-lg uc-text" />
+                            </div>
+
+
+
+
+                             <div class="form-group col-sm-4">
+                                <select name="Regions" id="Regions" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Educational Enterprise Region</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input type="text" name="SchoolName" id="SchoolName" autocomplete="off" placeholder="School Name" required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="TeacherMobile"
-                                    id="TeacherMobile"
-                                    autocomplete="off"
-                                    placeholder="Teacher Mobile"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="TeacherPhone"
-                                    id="TeacherPhone"
-                                    autocomplete="off"
-                                    placeholder="Teacher Phone"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="TeacherWhatsApp"
-                                    id="TeacherWhatsApp"
-                                    autocomplete="off"
-                                    placeholder="Teacher WhatsApp"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input type="email" name="TeacherEmail" id="TeacherEmail" autocomplete="off" placeholder="Teacher Email " required class="form-control custom-form-control input-lg uc-text" />
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="Specialty" id="Specialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled> Service Type</option>
-                                    <option value="YEARLY EXAMINATIONS">YEARLY EXAMINATIONS</option>
-                                    <option value="MONTHLY EXAMINATIONS">MONTHLY EXAMINATIONS</option>
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Educational Enterprise City</option>
                                 </select>
                             </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="District" id="District" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Educational Enterprise District</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="form-group col-sm-4">
+                                <select name="EducationalEnterpriseSpecialty" id="EducationalEnterpriseSpecialty" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Educational Enterprise Specialty</option>
+                                    <option value="KGS">KGS</option>
+                                    <option value="PRIS">PRIS</option>
+                                    <option value="PRES">PRES</option>
+                                    <option value="SECS">SECS</option>
+                                    <option value="KGPRIS">KGPRIS</option>
+                                    <option value="PRIPRES">PRIPRES</option>
+                                    <option value="PRESECS">PRESECS</option>
+                                    <option value="KGPRIPRES">KGPRIPRES</option>
+                                    <option value="PRIPRESECS">PRIPRESECS</option>
+                                    <option value="KGPRIPRESECS">KGPRIPRESECS</option>
+                                    <option value="INSTITUTE">INSTITUTE</option>
+                                    <option value="UNIVERSITY">UNIVERSITY</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col-sm-4">
+                                <select name="EducationalEnterpriseSyllabus" id="EducationalEnterpriseSyllabus" required class="form-control custom-form-control input-lg">
+                                    <option value="" selected disabled>Educational Enterprise Syllabus</option>
+                                     <option value="SOMALILAND SYLLABUS">SOMALILAND SYLLABUS</option>
+                                     <option value="OTHER SYLLABUS">OTHER SYLLABUS</option>
+                                </select>
+                            </div>
+
+
+
+
+
+
+                             <div class="form-group col-sm-4">
+                                <input
+                                    type="text"
+                                    name="RegistrationDate"
+                                    id="RegistrationDate"
+                                    autocomplete="off"
+                                    placeholder="Registration Date"
+                                    onfocus="(this.type='date')"
+                                    onblur="(this.type='text')"
+                                    required
+                                    class="form-control custom-form-control input-lg uc-text"
+                                />
+                            </div>
+
 
                             <div class="form-group col-sm-4">
                                 <input
@@ -184,10 +235,9 @@
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
                                 />
-                                <!-- <input type="Date" name="StartingDate" id="StartingDate" autocomplete="off" placeholder="Starting Date" onchange="this.className=(this.value!=''?'has-value':'')" required class="form-control custom-form-control input-lg uc-text" > -->
                             </div>
 
-                            <div class="form-group col-sm-4">
+                             <div class="form-group col-sm-4">
                                 <input
                                     type="text"
                                     name="EndingDate"
@@ -199,43 +249,8 @@
                                     required
                                     class="form-control custom-form-control input-lg uc-text"
                                 />
-                                <!-- <input type="Date" name="EndingDate" id="EndingDate" autocomplete="off" placeholder="Ending Date" onchange="this.className=(this.value!=''?'has-value':'')" required class="form-control custom-form-control input-lg uc-text" > -->
                             </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="Region" id="maroodijeex" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Region</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="City" id="topic" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher City</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="Districts" id="chapter" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Districts</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="TeacherLevel" id="TeacherLevel" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Level </option>
-                                    <option value="">SCHOOL LEVEL</option>
-                                    <option value="">INSTITUTE LEVEL</option>
-                                    <option value="">UNIVERSITY LEVEL</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group col-sm-4">
-                                <select name="service" id="service" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Service</option>
-                                    <option value="ONLINE EXAMINATIONS"> ONLINE EXAMINATIONS</option>
-                                    <option value="OFFLINE EXAMINATIONS">OFFLINE EXAMINATIONS</option>
-                                </select>
-                            </div>
+                            
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
