@@ -284,7 +284,45 @@
         <script src="enjs/bootstrap.js"></script>
         <script src="enjs/script.js"></script>
         <script>
-            maroodijeex()
+           var subjectObject = {
+  "MAROODIJEEX REGION": {
+    "HARGAYSA CITY": ["26 JUNE DISTRICT",
+                      "31 MAY DISTRICT",
+                      "AXMED DHAGAX DISTRICT", 
+                      "MACALIN HAARUUN DISTRICT", 
+                      "GACAN LIBAAX DISTRICT", 
+                      "IBRAHIM KOODBUUR DISTRICT",
+                      "MAXAMED HAYBE DISTRICT",
+                      "MAXAMED MOOGE DISTRICT"] //8
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("maroodijeex");
+  var topicSel = document.getElementById("City");
+  var chapterSel = document.getElementById("Districts");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+      
         </script>
     </body>
 </html>
