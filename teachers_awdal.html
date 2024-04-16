@@ -104,19 +104,8 @@
                             <div class="form-group col-sm-4">
                                 <select name="TeacherType" id="TeacherType" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Teacher Type </option>
-                                    <option value="TEACHER KGS">TEACHER KGS</option>
-                                    <option value="TEACHER PRIS">TEACHER PRIS</option>
-                                    <option value="TEACHER PRES">TEACHER PRES</option>
-                                    <option value="TEACHER SECS">TEACHER SECS</option>
-                                    <option value="TEACHER KGPRIS">TEACHER KGPRIS</option>
-                                    <option value="TEACHER PRIPRES">TEACHER PRIPRES</option>
-                                    <option value="TEACHER PRESECS">TEACHER PRESECS</option>
-                                    <option value="TEACHER KGPRIPRES">TEACHER KGPRIPRES</option>
-                                    <option value="TEACHER PRIPRESECS">TEACHER PRIPRESECS</option>
-                                    <option value="TEACHER KGPRIPRESECS">TEACHER KGPRIPRESECS</option>
-                                    <option value="TEACHER AIS">TEACHER AIS</option>
-                                    <option value="TEACHER AUS">TEACHER AUS</option>
-                                    <option value="TEACHER EMIS">TEACHER EMIS</option>
+                                    <option value="PRIVATE TEACHER "> PRIVATE TEACHER </option>
+                                    <option value="PUBLIC TEACHER ">PUBLIC TEACHER </option>
                                 </select>
                             </div>
 
@@ -138,71 +127,14 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="TeacherPhone"
-                                    id="TeacherPhone"
-                                    autocomplete="off"
-                                    placeholder="Teacher Phone"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="TeacherWhatsApp"
-                                    id="TeacherWhatsApp"
-                                    autocomplete="off"
-                                    placeholder="Teacher WhatsApp"
-                                    maxlength="15"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                    oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
-                                />
-                            </div>
-                            <div class="form-group col-sm-4">
                                 <input type="email" name="TeacherEmail" id="TeacherEmail" autocomplete="off" placeholder="Teacher Email " required class="form-control custom-form-control input-lg uc-text" />
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="Specialty" id="Specialty" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled> Service Type</option>
-                                    <option value="YEARLY EXAMINATIONS">YEARLY EXAMINATIONS</option>
-                                    <option value="MONTHLY EXAMINATIONS">MONTHLY EXAMINATIONS</option>
-                                </select>
-                            </div>
+                            
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="StartingDate"
-                                    id="StartingDate"
-                                    autocomplete="off"
-                                    placeholder="Starting Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                                
-                            </div>
+                            
 
-                            <div class="form-group col-sm-4">
-                                <input
-                                    type="text"
-                                    name="EndingDate"
-                                    id="EndingDate"
-                                    autocomplete="off"
-                                    placeholder="Ending Date"
-                                    onfocus="(this.type='date')"
-                                    onblur="(this.type='text')"
-                                    required
-                                    class="form-control custom-form-control input-lg uc-text"
-                                />
-                                
+                            
 
                             <div class="form-group col-sm-4">
                                 <select name="Region" id="awdal" required class="form-control custom-form-control input-lg">
@@ -211,13 +143,13 @@
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="City" id="topic" required class="form-control custom-form-control input-lg">
+                                <select name="City" id="City" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Teacher City</option>
                                 </select>
                             </div>
 
                             <div class="form-group col-sm-4">
-                                <select name="Districts" id="chapter" required class="form-control custom-form-control input-lg">
+                                <select name="Districts" id="Districts" required class="form-control custom-form-control input-lg">
                                     <option value="" selected disabled>Teacher Districts</option>
                                 </select>
                             </div>
@@ -231,19 +163,13 @@
                                 </select>
                             </div>
 
-                            <div class="form-group col-sm-4">
-                                <select name="service" id="service" required class="form-control custom-form-control input-lg">
-                                    <option value="" selected disabled>Teacher Service</option>
-                                    <option value="ONLINE EXAMINATIONS"> ONLINE EXAMINATIONS</option>
-                                    <option value="OFFLINE EXAMINATIONS">OFFLINE EXAMINATIONS</option>
-                                </select>
-                            </div>
-
+                          
                             
                             <div class="form-group col-md-12 text-center">
                                 <input type="submit" value="REGISTER" onclick="ValidateEmail(email)" class="send-btn btn custom-btn btn-primary custom-btn-main" />
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
